@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #434455;
+  --secondary-color: #2e2f42;
+  --design-color: #4d5ae5;
+  --action-color: #404bbf;
+  --white-color: #ffffff;
+  --light-background-color: #f4f4fd;
+  --light-text-color: #f4f4fd;
+  --frame-color: #e7e9fc;
+  --primary-text: 'Roboto', sans-serif;
+  --secondary-text: 'Raleway', sans-serif;
+}
+/* Body */
+body {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-family: var(--primary-text);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: var(--white-color);
+}
+/* Reset */
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--action-color);
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* Navigation and contact */
+.nav-link {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.contact {
+  color: var(--primary-color);
+  font-style: normal;
+}
+/* Logo */
+.logo {
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1.17;
+  font-family: var(--secondary-text);
+  color: var(--design-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: var(--secondary-color);
+}
+
+.logo-footer,
+.footer-text {
+  color: var(--light-text-color);
+}
+
+/* Buttons */
+.hero-btn {
+  background-color: var(--design-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white-color);
+  background-color: var(--action-color);
+}
+
+.btn {
+  color: var(--design-color);
+  background-color: var(--light-background-color);
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--frame-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--white-color);
+  background-color: var(--action-color);
+}
+
+/* Hero section in studio */
+.hero-section {
+  background-color: var(--secondary-color);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+}
+
+/* Sections 2-4 in studio and portfolio */
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+}
+
+.text {
+  color: var(--primary-color);
+}
+
+.hero-img {
+  border: 1px solid var(--frame-color);
+}
+
+.team-section {
+  background-color: var(--light-background-color);
+}
+.card {
+  background-color: var(--white-color);
+}
+
+/* Footer */
+.footer-backround {
+  background-color: var(--secondary-color);
+}
