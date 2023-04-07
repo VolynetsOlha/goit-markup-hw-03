@@ -9,6 +9,7 @@
   --frame-color: #e7e9fc;
   --primary-text: 'Roboto', sans-serif;
   --secondary-text: 'Raleway', sans-serif;
+  --set-gap: 24px;
 }
 /* Body */
 body {
@@ -30,6 +31,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -54,6 +57,14 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Section */
+.section {
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 120px;
+  padding-left: 0;
 }
 
 /* Header */
@@ -107,10 +118,11 @@ button {
 
 .nav-link {
   display: block;
-  font-weight: 500;
-  color: var(--secondary-color);
   padding-top: 24px;
   padding-bottom: 24px;
+
+  font-weight: 500;
+  color: var(--secondary-color);
 }
 
 .contact-link {
@@ -125,9 +137,10 @@ button {
 /* Hero section in studio */
 .hero-section {
   background-color: var(--secondary-color);
-}
-.hero-container {
   padding: 188px 0;
+}
+
+.hero-container {
   text-align: center;
 }
 
@@ -147,7 +160,10 @@ button {
 }
 
 .hero-btn {
-  padding: 16px 32px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
   min-width: 169px;
   min-height: 56px;
 
@@ -169,13 +185,9 @@ button {
 }
 
 /* All sections  */
-.section {
-  padding: 120px 0;
-}
 
 .title {
   min-width: 323px;
-  height: 40px;
   margin-bottom: 72px;
 
   font-weight: 700;
@@ -185,6 +197,19 @@ button {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .subtitle {
@@ -202,6 +227,10 @@ button {
 }
 
 /* Second section */
+
+.second-section {
+  padding-top: 0;
+}
 .list-possibilities {
   display: flex;
 }
@@ -213,13 +242,15 @@ button {
 .pictures-list {
   display: flex;
   padding: 0px;
-  gap: 24px;
+  gap: var(--set-gap);
   margin-top: 72px;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 1128px;
 }
 
 .picture {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+  flex-basis: calc(100% - 2 * var(--set-gap)) / 3;
 }
 
 /*Team section  */
@@ -230,7 +261,7 @@ button {
 .list-card {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: var(--set-gap);
 }
 
 .card {
@@ -240,18 +271,25 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc(100% - 3 * var(--set-gap)) / 4;
 }
 
 .user {
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   text-align: center;
 }
 
 /* Portfolio */
 .section-portfolio {
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-right: 0;
+  padding-bottom: 96px;
+  padding-left: 0;
 }
+
 .btn-list {
   display: flex;
   align-items: center;
@@ -265,7 +303,10 @@ button {
 }
 
 .btn {
-  padding: 12px 24px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
 
   color: var(--design-color);
   background-color: var(--light-background-color);
@@ -283,34 +324,46 @@ button {
   background-color: var(--action-color);
 }
 
-.list-img {
+.list-img-card {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1128px;
   row-gap: 48px;
-  column-gap: 24px;
+  column-gap: var(--set-gap);
+  width: 1128px;
 }
 
-.img {
+.img-card {
   border: 1px solid var(--frame-color);
+  background-color: var(--white-color);
   width: 360px;
-  height: 420px;
-  flex-basis: calc((100% - 8 * 24px) / 9);
+  flex-basis: calc(100% - 8 * var(--set-gap)) / 9;
 }
+
 .desc {
-  margin: 32px 0;
-  padding: 0 16px 0 16px;
+  margin-top: 32px;
+  margin-right: 0;
+  margin-bottom: 32px;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 16px;
+  padding-bottom: 0;
+  padding-left: 16px;
 }
 
 /* Footer */
 .footer-section {
   background-color: var(--secondary-color);
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  padding-left: 0;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
 }
+
 .logo-footer {
   color: var(--light-text-color);
 }
@@ -318,6 +371,5 @@ button {
 .footer-text {
   margin-top: 16px;
   width: 264px;
-  height: 72px;
   color: var(--light-text-color);
 }
