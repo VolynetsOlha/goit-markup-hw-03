@@ -246,7 +246,7 @@ button {
   margin-top: 72px;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1128px;
+  max-width: 1128px;
 }
 
 .picture {
@@ -262,6 +262,7 @@ button {
   display: flex;
   justify-content: center;
   gap: var(--set-gap);
+  max-width: 1128px;
 }
 
 .card {
@@ -329,7 +330,7 @@ button {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: var(--set-gap);
-  width: 1128px;
+  max-width: 1128px;
 }
 
 .img-card {
